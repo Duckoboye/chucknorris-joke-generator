@@ -1,0 +1,24 @@
+body {
+    background-color: #FAF9F6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #23272a;
+
+}
+#textdiv {
+    display: grid;
+    grid-gap: 15px;
+    justify-content: center;
+    padding: 60px;
+    padding-bottom: 5px;
+}
+
+#titletext {
+    font-size: 75px;
+}
+
+#splashtext {
+    position:relative;
+    top:-30px;
+    font-style: italic;
+}
