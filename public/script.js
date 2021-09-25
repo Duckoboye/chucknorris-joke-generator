@@ -11,7 +11,7 @@ window.onload = () => {
         "this website took me like 4 hours to make which is kind of sad",
         "\"why did I do this\" - Me",
         "Generic splash text",
-        "Pro tip: press R to generate a random joke to speed up your Chuck Norris joke consumption",
+        "Pro tip: pressing R generates a new Chuck Norris joke, allowing you to accelerate your Chuck Norris joke consumption",
         "#1 source for Chuck Norris jokes!",
         "Now with splash messages!"
     ]
