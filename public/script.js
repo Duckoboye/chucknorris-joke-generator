@@ -13,6 +13,7 @@ window.onload = () => {
         "Generic splash text",
         "Pro tip: press R to generate a random joke to speed up your Chuck Norris joke consumption"
     ]
+
     document.getElementById('splashtext').innerHTML = splashMessages[Math.floor(Math.random() * splashMessages.length)]
 }
 randomButton.onclick = randomCall;
