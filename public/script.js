@@ -19,10 +19,18 @@ window.onload = () => {
     document.getElementById('splashtext').innerHTML = splashMessages[Math.floor(Math.random() * splashMessages.length)]
 }
 randomButton.onclick = randomCall;
+submitButton.onclick = submitCall;
+
 randomCall();
 window.addEventListener("keyup", (e) => {
     if (e.code === "KeyR") {
         randomCall();
+    }
+});
+
+window.addEventListener("keyup", (e) => {
+    if (e.code === "Space") {
+        submitCall();
     }
 });
 
@@ -32,11 +40,11 @@ function randomCall() {
     .then(data => textBox.innerHTML = '\"'+data.value+'\"')
 }
 
-
-submitButton.onclick = () => {
+function submitCall() {
     const catagorylist = document.getElementById("catagoryList");
     var value = catagorylist.options[catagorylist.selectedIndex].text;
     fetch(`https://api.chucknorris.io/jokes/random?category=${value.toLowerCase()}`)
     .then(res => res.json())
     .then(data => textBox.innerHTML = '\"'+data.value+'\"')
 }
+
